@@ -110,11 +110,7 @@ alias cls="clear"
 alias j="z"
 alias ff="fastfetch"
 alias vim="nvim"
-#alias hydrus="WAYLAND_DISPLAY= QT_QPA_PLATFORM=xcb ~/Documents/Hydrus\ Network/hydrus_client 1>/dev/null 2>/dev/null & disown"
 alias rmt="gio trash"
-
-#alias second_monitor_off="hyprctl keyword monitor \"desc:BNQ BenQ XL2420G, disable\""
-#alias second_monitor_on="hyprctl keyword monitor \"desc:BNQ BenQ XL2420G, 1920x1080@120, 0x0, auto, transform, 1\""
 
 alias fix_walls="swww-daemon & disown"
 alias restart_waybar="killall waybar; waybar 1>/dev/null 2>/dev/null & disown"
@@ -122,17 +118,3 @@ alias restart_waybar="killall waybar; waybar 1>/dev/null 2>/dev/null & disown"
 alias amogus="echo \"when the impostor is sus ඞ\""
 
 fastfetch
-
-# Japanese
-export QT_IM_MODULE=fcitx
-export XMODIFIERS=@im=fcitx
-
-# Created by `pipx` on 2025-05-13 12:35:14
-export PATH="$PATH:/home/timur/.local/bin"
-
-. "$HOME/.local/share/../bin/env"
-eval "$(uv generate-shell-completion zsh)"
-eval "$(uvx --generate-shell-completion zsh)"
-
-# dotnet
-export PATH="$PATH:/home/timur/.dotnet/tools"

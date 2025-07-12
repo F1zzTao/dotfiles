@@ -1,0 +1,11 @@
+@define-color foreground {{colors.on_background.default.rgba}};
+/* @define-color background {{colors.background.default.rgba}}; */
+@define-color back {{colors.background.default.rgba | set_alpha: 0.5}};
+@define-color cursor #D9E0EE;
+@define-color button_hover {{colors.secondary.default.rgba | set_alpha: 0.3}};
+@define-color button_active {{colors.secondary.default.rgba | set_alpha: 0.6}};
+
+/*-----All Colors--------*/
+<* for name, value in colors *>
+@define-color {{name}} {{value.default.rgba}};
+<* endfor *>

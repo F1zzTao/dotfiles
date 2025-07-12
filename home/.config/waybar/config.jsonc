@@ -1,0 +1,35 @@
+// -*- mode: jsonc -*-
+{
+    // "layer": "top", // Waybar at top layer
+    // "position": "bottom", // Waybar position (top|bottom|left|right)
+    "height": 50, // Waybar height (to be removed for auto height)
+    "width": 1380, // Waybar width
+    "spacing": 10, // Gaps between modules (4px)
+    // Choose the order of the modules
+    "include": ["~/.config/waybar/modules.jsonc"],
+    "modules-left": [
+        "custom/distrologo",
+        "custom/media",
+        "hyprland/workspaces",
+        "hyprland/window"
+    ],
+    "modules-center": [
+
+    ],
+    "modules-right": [
+        "hyprland/language",
+        "mpd",
+        // "idle_inhibitor",
+        "pulseaudio",
+        // "network",
+        // "power-profiles-daemon",
+        "temperature",
+        "backlight",
+        "battery",
+        "battery#bat2",
+        "clock",
+        "tray",
+        "custom/notifications",
+        "custom/power"
+    ]
+}

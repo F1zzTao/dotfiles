@@ -1,0 +1,34 @@
+[config]
+version_check = true
+reload_apps = true
+
+[config.reload_apps_list]
+kitty = true
+gtk_theme = true
+
+[config.wallpaper]
+command = "swww"
+arguments = [ "img", "-t", "outer", "--transition-duration", "1.5", "--transition-step", "255", "--transition-fps", "60", "-f", "Nearest",]
+set = true
+
+[templates.kitty]
+input_path = "~/.config/matugen/templates/matugen-kitty.conf"
+output_path = "~/.config/kitty/themes/matugen.conf"
+post_hook = "kitten themes --reload-in=all matugen"
+
+[templates.hyprland]
+input_path = "~/.config/matugen/templates/matugen-hyprland.conf"
+output_path = "~/.config/hypr/matugen/matugen-hyprland.conf"
+
+[templates.rofi]
+input_path = "~/.config/matugen/templates/matugen-rofi.rasi"
+output_path = "~/.config/rofi/matugen/matugen-rofi.rasi"
+
+[templates.waybar]
+input_path = "~/.config/matugen/templates/matugen-waybar.css"
+output_path = "~/.config/waybar/matugen/matugen-waybar.css"
+post_hook = "pkill -SIGUSR2 waybar"
+
+[templates.cava]
+input_path = "~/.config/matugen/templates/matugen-cava"
+output_path = "~/.config/cava/config"
